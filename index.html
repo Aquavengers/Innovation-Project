@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Scuba Diving Map</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="outer-container">
+        <header>
+            <h1 style="text-align:center" class="title">Scuba Diving Locations Map</h1>
+            <h3 style="text-align:center;" class="cool">By: Aquavengers</h3>
+            <img style = "display: block; margin: auto;" src = "logo.png" alt = "Aquavenger's Logo" height = 150 width = auto>
+            <br>
+            <br>
+            <nav class="nav-container">
+                <a href="ourPurpose.html">Our Purpose</a>
+                <a href="sources.html">Sources</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </nav>
+        </header>
+
+        <div class="inner-container">
+            <img src="scubaDiver.jpeg" alt="Scuba Diver" width="400" height="auto">
+            <h2 style='color:rgb(0,69,102)'>This is a map showcasing different statistics of common scuba diving places! Here are the features listed about each place:</h2>
+            <ul>
+                <li class = "adjacentTo">
+                    <span style = "margin-right: 8px;"> Marine Life </span>
+                    <img src = "blueDolphin.png" alt = "Blue Dolphin" width = "20" height = "auto" style = "margin-top: -2x;"
+                </li>
+                <li class = "adjacentTo">
+                    <span style = "margin-right: 8px;"> Diving Depth </span>
+                    <img src = "divingDepth.png" alt = "Diving Depth" width = "20" height = "auto" style = "margin-top: -2x;"
+                </li>
+                <li class = "adjacentTo">
+                    <span style = "margin-right: 8px;"> Popular Locations </span>
+                    <img src = "location.png" alt = "Location Marker" width = "20" height = "auto" style = "margin-top: -2x;"
+                </li>
+                 <li class = "adjacentTo">
+                    <span style = "margin-right: 8px;"> Natural Formations </span>
+                    <img src = "coralReef.png" alt = "Coral Reef" width = "20" height = "auto" style = "margin-top: -2x;"
+                </li>
+                <li style = "color: red; " class = "adjacentTo">
+                    <span style="margin-right: 8px;">Hazards</span>
+                    <img src= "riskIcon.png" alt = "Warning Sign" width = "20" height = "auto" style = "margin-top: -4px;">
+                </li>
+                
+              
+     
+            </ul>
+
+            <button id="getLocationBtn">Get My Location</button>
+            <div id="location" style="margin-top: 10px; font-weight: bold;"></div>
+    
+
+
+               <div id="map" style="height: 800px;"></div>
+
+            <br>
+            <h1> Color Code (Experience Levels): </h1>
+            <ul>
+                <li> 🟢 Beginner </li>
+                <li> 🟡 Intermediate </li>
+                <li> 🔴 Expert  </li>
+            </ul>
+            <h1> Color Code (Depth Levels): </h1>
+            <ul>
+                <li> 🟢 Beginner </li>
+                <li> 🟡 Intermediate </li>
+                <li> 🔴 Expert  </li>
+  <div class="container">
+        <img src="your-image.jpg" alt="Your Image" width="100">
+        <p>Your text goes here. This text will be placed right next to the image.</p>
+    </div>
+            </ul>
+        </div>
+
+        <div class="review-container">
+            <h1><u><b>Review Form</b></u></h1>
+            <label for="text1">Write a review for your experience at a specfic diving/scuba diving location:</label>
+            <input type="text" id="text1" autocomplete="off" placeholder="Type here...">
+            <br>
+            <label for="text2">Write the location/spot where you scuba dived:</label>
+            <input type="text" id="text2" autocomplete="off" placeholder="Type here...">
+            <button onclick="submitReview()">Submit Review</button>
+            <div id="d"><i>Review will appear here</i></div>
+        </div>
+        <p style = "color: white; text-align: center; font-family: sans-serif; font-size: 21px; -webkit-text-stroke-width: .25px; -webkit-text-stroke-color: black;"> <b> Copyright © 2024 Aquavengers. All rights reserved. </b> </p>
+    <script src="script.js"> </script> 
+    
+</body>
+
+</html>
